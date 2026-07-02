@@ -23,7 +23,7 @@
         <div class="header-right">
           <a href="tel:+992501234567" class="phone-link">
             <span class="lbl">Отдел продаж</span>
-            +992 102-888-800
+            +992 888888800
           </a>
           <a href="#contact" class="btn btn-brass">Оставить заявку</a>
         </div>
@@ -57,9 +57,9 @@
                 <div class="lbl">официальная гарантия на всю линейку</div>
               </div>
               <div class="stat">
-                <div class="num">80<span>м</span></div>
+                <div class="num">⬇️<span>м</span></div>
                 <div class="lbl">
-                  максимальная глубина погружения скважинных моделей
+                  Определим максимальную глубину погружения скважинных моделей
                 </div>
               </div>
               <div class="stat">
@@ -142,7 +142,6 @@
                 font-size="11"
                 font-weight="600"
               >
-
                 ЗЕРКАЛО ВОДЫ · -22М
               </text>
 
@@ -373,9 +372,9 @@
               водоснабжение дома, дачи, фермы.
             </p>
             <div class="spec-list">
-              <span>Глубина: <b>до 80 м</b></span>
-              <span>Диаметр: <b>от 76 мм</b></span>
-              <span>Напряжение: <b>167–242 В</b></span>
+              <span>Глубина: <b>до определим - м</b></span>
+              <span>Диаметр: <b>от определим - мм</b></span>
+              <span>Напряжение: <b>определим -В</b></span>
             </div>
           </div>
 
@@ -399,8 +398,8 @@
               водоснабжения.
             </p>
             <div class="spec-list">
-              <span>Напор: <b>до 60 м</b></span>
-              <span>Подача: <b>до 8 м³/ч</b></span>
+              <span>Напор: <b>до определим - м</b></span>
+              <span>Подача: <b>до определим - м³/ч</b></span>
               <span>Самовсасывающие</span>
             </div>
           </div>
@@ -424,7 +423,7 @@
               строительных котлованов.
             </p>
             <div class="spec-list">
-              <span>Твёрдые частицы: <b>до 35 мм</b></span>
+              <span>Твёрдые частицы: <b>до определим - мм</b></span>
               <span>С поплавковым выкл.</span>
               <span>Погружение: <b>полное</b></span>
             </div>
@@ -449,7 +448,7 @@
               давления в доме без перепадов.
             </p>
             <div class="spec-list">
-              <span>Бак: <b>19–24 л</b></span>
+              <span>Бак: <b>определим - л</b></span>
               <span>Автоматика реле давления</span>
               <span>Готовы к установке</span>
             </div>
@@ -472,7 +471,7 @@
             <span class="idx">01 / ПИТАНИЕ</span>
             <h4>Работа при скачках напряжения</h4>
             <p>
-              Двигатели переносят диапазон 167–242 В без потери ресурса —
+              Двигатели переносят диапазон от–до В без потери ресурса —
               актуально при нестабильной сельской электросети.
             </p>
           </div>
@@ -663,13 +662,13 @@
           <div class="info-row">
             <div class="k">Телефон</div>
             <div class="v">
-              +992 888-888-800<small>Ежедневно, 8:00–17:00</small>
+              +992 888888800<small>Ежедневно, 8:00–17:00</small>
             </div>
           </div>
           <div class="info-row">
             <div class="k">WhatsApp</div>
             <div class="v">
-              +992 2023-00-000<small>Быстрый расчёт по фото скважины</small>
+              +992 888888800<small>Быстрый расчёт по фото скважины</small>
             </div>
           </div>
           <div class="info-row">
@@ -678,8 +677,24 @@
           </div>
         </div>
 
-        <form class="request-form" id="requestForm">
+        <form
+          class="request-form"
+          id="requestForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input type="hidden" name="subject" value="Новая заявка с сайта" />
+          <input
+            type="hidden"
+            name="access_key"
+            value="ae32d0c1-77af-45fa-a984-c5f42a7e9b23"
+          />
+
+          <!-- Чтобы не ловить спам -->
+          <input type="checkbox" name="botcheck" style="display: none" />
+
           <h3>Оставить заявку</h3>
+
           <p class="form-note">
             Заполните форму — инженер свяжется с вами и подберёт модель.
           </p>
@@ -694,16 +709,18 @@
               required
             />
           </div>
+
           <div class="field">
             <label for="phone">Телефон</label>
             <input
               id="phone"
               name="phone"
               type="tel"
-              placeholder="+992  _  "
+              placeholder="+992..."
               required
             />
           </div>
+
           <div class="field">
             <label for="pumptype">Тип насоса</label>
             <select id="pumptype" name="pumptype">
@@ -714,15 +731,18 @@
               <option>Не знаю — нужна консультация</option>
             </select>
           </div>
+
           <div class="field">
             <label for="msg">Комментарий</label>
             <textarea
               id="msg"
-              name="msg"
+              name="message"
               placeholder="Глубина скважины, город, назначение"
             ></textarea>
           </div>
+
           <button type="submit" class="btn btn-dark">Отправить заявку</button>
+
           <div class="form-status" id="formStatus">
             Заявка принята. Мы свяжемся с вами в ближайшее рабочее время.
           </div>
@@ -768,21 +788,13 @@
         <div class="footer-bottom">
           <span>© 2026 LEO Pump Tajikistan. Все права защищены.</span>
           <span
-            >Душанбе, просп.Хофизи Шерози - Кушониён базар 2-вход, Магазин-450 ·
-            +992 2023-000-00
+            >Душанбе, просп.Хофизи Шерози - Кушониён базар 2-вход, Магазин - 450
+            · +992 888-888-800
           </span>
         </div>
       </div>
     </footer>
 
-    <script>
-      document
-        .getElementById("requestForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          document.getElementById("formStatus").classList.add("show");
-          this.reset();
-        });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
