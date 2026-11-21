@@ -620,9 +620,18 @@ footer {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 12.5px;
   flex-wrap: wrap;
   gap: 10px;
+}
+.developer-link {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.42);
+  transition: color 0.2s ease;
+}
+.developer-link:hover {
+  color: var(--cyan);
 }
 
 /* ---------- RESPONSIVE ---------- */
