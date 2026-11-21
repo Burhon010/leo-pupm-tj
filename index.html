@@ -648,8 +648,7 @@
           <div class="eyebrow">Контакты</div>
           <h2>Рассчитаем насос под вашу скважину бесплатно</h2>
           <p class="lead">
-            Оставьте заявку или свяжитесь напрямую — ответим в течение рабочего
-            дня.
+            Свяжитесь с нами напрямую — ответим в течение рабочего дня.
           </p>
 
           <div class="info-row">
@@ -677,76 +676,7 @@
           </div>
         </div>
 
-        <form
-          class="request-form"
-          id="requestForm"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <input type="hidden" name="subject" value="Новая заявка с сайта" />
-          <input
-            type="hidden"
-            name="access_key"
-            value="ae32d0c1-77af-45fa-a984-c5f42a7e9b23"
-          />
 
-          <!-- Чтобы не ловить спам -->
-          <input type="checkbox" name="botcheck" style="display: none" />
-
-          <h3>Оставить заявку</h3>
-
-          <p class="form-note">
-            Заполните форму — инженер свяжется с вами и подберёт модель.
-          </p>
-
-          <div class="field">
-            <label for="name">Имя</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Как к вам обращаться"
-              required
-            />
-          </div>
-
-          <div class="field">
-            <label for="phone">Телефон</label>
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="+992..."
-              required
-            />
-          </div>
-
-          <div class="field">
-            <label for="pumptype">Тип насоса</label>
-            <select id="pumptype" name="pumptype">
-              <option>Скважинный</option>
-              <option>Поверхностный</option>
-              <option>Дренажный / фекальный</option>
-              <option>Насосная станция</option>
-              <option>Не знаю — нужна консультация</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="msg">Комментарий</label>
-            <textarea
-              id="msg"
-              name="message"
-              placeholder="Глубина скважины, город, назначение"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-dark">Отправить заявку</button>
-
-          <div class="form-status" id="formStatus">
-            Заявка принята. Мы свяжемся с вами в ближайшее рабочее время.
-          </div>
-        </form>
       </div>
     </section>
 
@@ -795,6 +725,5 @@
       </div>
     </footer>
 
-    <script src="./script.js"></script>
   </body>
 </html>

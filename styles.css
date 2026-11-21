@@ -523,8 +523,10 @@ section {
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+}
+.contact-info {
+  max-width: 650px;
 }
 .contact-info h2 {
   font-size: 31px;
@@ -560,69 +562,6 @@ section {
   color: var(--muted);
   font-size: 13px;
   margin-top: 2px;
-}
-
-form.request-form {
-  background: var(--white);
-  border: 1px solid var(--line);
-  padding: 38px;
-}
-form.request-form h3 {
-  font-size: 19px;
-  margin-bottom: 6px;
-}
-form.request-form .form-note {
-  color: var(--muted);
-  font-size: 13.5px;
-  margin-bottom: 26px;
-}
-.field {
-  margin-bottom: 18px;
-}
-.field label {
-  display: block;
-  font-size: 12.5px;
-  font-family: "IBM Plex Mono", monospace;
-  letter-spacing: 0.04em;
-  color: var(--steel);
-  margin-bottom: 7px;
-  text-transform: uppercase;
-}
-.field input,
-.field textarea,
-.field select {
-  width: 100%;
-  border: 1px solid var(--line);
-  background: var(--paper);
-  padding: 12px 14px;
-  font-family: "Inter", sans-serif;
-  font-size: 14.5px;
-  color: var(--ink);
-  border-radius: var(--radius);
-}
-.field input:focus,
-.field textarea:focus,
-.field select:focus {
-  border-color: var(--steel);
-  outline: none;
-}
-.field textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-form.request-form .btn {
-  width: 100%;
-  justify-content: center;
-  margin-top: 6px;
-}
-.form-status {
-  font-size: 13px;
-  color: var(--cyan-dim);
-  margin-top: 12px;
-  display: none;
-}
-.form-status.show {
-  display: block;
 }
 
 /* ---------- FOOTER ---------- */
